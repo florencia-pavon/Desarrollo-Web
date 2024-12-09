@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- Fuentes de Letras -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Fuente de Iconos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <title>Contacto</title>
+</head>
+<body>
+    <div class="grid-container">
+        <header class="grid-item header">
+            <nav class="menu">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="proyecto.html">Proyectos</a></li>
+                    <li><a href="experiencia.html">Experiencia</a></li>
+                    <li><a href="conocimiento.html">Conocimientos</a></li>
+                    <li><a href="estudio.html">Estudios</a></li>
+                </ul>
+            </nav>
+            <h1 class="titulos">Contacto</h1>
+        </header>
+
+        <main class="grid-item main">
+            <p>Deja tu mensaje</p>
+            <div class="information-container">
+                <form action="/submit" method="post">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre">
+                    <label for="mail">Mail</label>
+                    <input type="email" name="mail" id="mail"><br><br>
+                    <label for="mensaje">Mensaje</label><br>
+                    <textarea name="mensaje" id="mensaje"></textarea><br>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </main>
+
+        <footer class="grid-item footer">
+            <div class="linkedin">
+                <i class="bi bi-linkedin"></i>
+                <a href="https://www.linkedin.com/in/florencia-pavon/" target="_blank">Florencia-Pavon</a>
+
+            </div>
+            <div class="telefono">
+                <i class="bi bi-telephone"></i>
+                +54 9 3543 571-802
+            </div>        
+        </footer>
+
+    </div>
+
+    
+    
+</body>
+</html>
