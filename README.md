@@ -1,9 +1,11 @@
 <h1 align="center">Hi 👋, I'm Florencia Pavon</h1>
-- 🔭 I’m currently working on [Desarrollo Web](https://github.com/florencia-pavon/Desarrollo-Web.git)
+<h3 align="center">Explore my career path, skills and educational knowledge on this website.</h3>
+
+- 🔭 I’m currently working on **Desarrollo Web**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
-<a href="https://www.linkedin.com/in/florencia-pavon/" target="_blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="florencia pavon" height="30" width="40" /></a>
+<a href="https://linkedin.com/in/florencia pavon" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="florencia pavon" height="30" width="40" /></a>
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
