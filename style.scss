@@ -1,0 +1,177 @@
+@import './scss/colores';
+@import './scss/mixins';
+@import './scss/header';
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    @include lettering-style($family:"Outfit")
+}
+
+li {
+    margin: 10px;
+}
+
+#foto-perfil {
+    @include border(none,50%);
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+aside {
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+.header {
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+    padding: 20px;
+    background-color: $primary-color;
+}
+
+.footer {
+    grid-area: footer;
+    color: $letter-color;
+    @include flexbox(row,space-evenly,end);
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    a{
+        color: $letter-color
+    }
+}
+
+
+.subtitulo {
+    @include lettering-style(30px, $aling:start, $color:black);
+}
+
+.subtitulo-h3 {
+    @include lettering-style(18px, $aling:start, $color:black);
+}
+
+
+.github{
+    @include lettering-style(80px, $color:black, $aling:start);
+
+    a {
+        @include lettering-style($color:black, $decoration:underline);
+    }
+}
+
+.content-box{
+    @include flexbox(row,center,center);
+    @include border(none,10px);
+    margin-top: 40px;
+    padding: 0px, 50px;
+}
+
+.flex-content {
+    @include min-area(100px, 200px);
+    background-color: $secondary-color;
+    margin: 20px;
+    padding: 20px;
+    align-content: center;
+    text-align: center;
+
+}
+
+.mensaje {
+    @include min-area(200px, 200px);
+}
+
+
+
+.button {
+    @include lettering-style(15px, $color:black);
+    @include border(none, 10px);
+    background-color: $button-color;
+    padding: 10px;
+
+    &:hover{
+        background-color: white;
+    }
+}
+
+/* Visualizacion para pantallas tamaño mobile*/
+@media (max-width: 768px){
+
+    .grid-container {
+        display: grid;
+        height: 100%;
+        grid-template-rows: 1fr 2fr 1fr;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    }
+
+    
+    .header {
+        grid-area: header;
+    }
+    
+    .main {
+        grid-area: main;
+        padding: 10px;
+        text-align: center;
+
+        ul {
+            list-style: none;
+        }
+
+    }
+
+    .footer {
+        grid-area: footer;
+    }
+
+    .subtitulo, .subtitulo-h3 {
+        text-align: center;
+    }
+
+    form {
+        @include flexbox(column,center,center);
+    }
+
+    nav {
+        ul{
+            @include flexbox(column,center,center);
+        }
+    }
+
+    .content-box {
+        @include flexbox(column,center,center);
+    }
+
+
+}
+
+
+
+
+
+
+
+
+/* sass --watch style.scss style.css */

@@ -1,0 +1,24 @@
+@import 'mixins';
+
+.titulo-principal {
+    @include lettering-style(60px, center);
+}
+
+.titulo {
+    @include lettering-style(50px, $aling:start);
+}
+
+
+nav {
+    background-color: $nav-color;
+
+    ul {
+        @include flexbox(row,center,center);
+        list-style: none;
+
+        a {
+            @include lettering-style(20px, $color:white);
+            @include border(1px solid white, 10px);
+        }
+    }
+}
