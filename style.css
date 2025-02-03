@@ -54,6 +54,7 @@ html, body {
   text-align: center;
 }
 
+
 li {
   margin: 10px;
 }
@@ -197,6 +198,7 @@ aside {
   .main ul {
     list-style: none;
   }
+
   .footer {
     grid-area: footer;
   }
@@ -221,6 +223,7 @@ aside {
     justify-content: center;
     align-items: center;
   }
+
 }
 /* sass --watch style.scss style.css */
 
